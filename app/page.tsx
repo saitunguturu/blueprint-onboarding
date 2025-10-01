@@ -23,9 +23,8 @@ export default function Home() {
         </p>
 
         <img
-          src = "https://cdn.britannica.com/51/178051-050-3B786A55/San-Francisco.jpg"
+          src="https://cdn.britannica.com/51/178051-050-3B786A55/San-Francisco.jpg"
           className={styles.image}
-
         />
 
         <HeartIcon size={24} />
