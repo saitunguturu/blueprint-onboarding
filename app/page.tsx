@@ -22,10 +22,11 @@ export default function Home() {
           https://www.codetenderloin.org/
         </p>
 
-        <p>
-          Image Link:
-          https://cdn.britannica.com/51/178051-050-3B786A55/San-Francisco.jpg
-        </p>
+        <img
+          src = "https://cdn.britannica.com/51/178051-050-3B786A55/San-Francisco.jpg"
+          className={styles.image}
+
+        />
 
         <HeartIcon size={24} />
         <p>256 Likes</p>

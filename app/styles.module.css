@@ -14,3 +14,9 @@
   height: 100%;
   border: 1px solid black;
 }
+
+.image {
+  width: 21.625rem;
+  height: 14.4375rem;
+  flex-shrink: 0;
+}
