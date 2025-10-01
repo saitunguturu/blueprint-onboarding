@@ -8,6 +8,11 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.content}>
+        <h1 className={styles.header}>
+          <img src="assets/images/bp-logo.png" />
+          <span className="color-blue">blueprint</span> blog
+        </h1>
+
         <ProfileIcon size={24} />
         <p>rbeggs</p>
         <p>September 19</p>
