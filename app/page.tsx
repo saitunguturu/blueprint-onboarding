@@ -14,8 +14,10 @@ export default function Home() {
         </h1>
 
         <ProfileIcon size={24} />
-        <p>rbeggs</p>
-        <p>September 19</p>
+        <div className={styles.headerRow}>
+          <p className={styles.username}>rbeggs</p>
+          <p className={styles.date}>September 19</p>
+        </div>
         <p>
           In response to the growing homelessness crisis in San Francisco, a
           local nonprofit organization, Code Tenderloin, has launched a
@@ -32,22 +34,36 @@ export default function Home() {
           className={styles.image}
         />
 
-        <HeartIcon size={24} />
-        <p>256 Likes</p>
-        <ShareIcon size={24} />
+        <div className={styles.iconRow}>
+          <HeartIcon size={24} />
+          <p className={styles.username}>256 Likes</p>
+          <ShareIcon size={24} />
+        </div>
 
-        <ProfileIcon size={24} />
-        <p>daviddd</p>
-        <p>September 20</p>
-        <p>
-          This organization is doing amazing work tackling the complex root
-          causes of the issue.
-        </p>
+        <div className={styles.comment}>
+          <ProfileIcon size={24} className={styles.profileIcon} />
+          <div className={styles.commentContent}>
+            <div className={styles.commentHeader}>
+              <p className={styles.username}>daviddd</p>
+              <p className={styles.date}>September 20</p>
+            </div>
+            <p>
+              This organization is doing amazing work tackling the complex root
+              causes of the issue.
+            </p>
+          </div>
+        </div>
 
-        <ProfileIcon size={24} />
-        <p>vppraggie</p>
-        <p>September 21</p>
-        <p>Thanks for sharing!</p>
+        <div className={styles.comment}>
+          <ProfileIcon size={24} className={styles.profileIcon} />
+          <div className={styles.commentContent}>
+            <div className={styles.commentHeader}>
+              <p className={styles.username}>vppraggie</p>
+              <p className={styles.date}>September 21</p>
+            </div>
+            <p>Thanks for sharing!</p>
+          </div>
+        </div>
       </div>
     </main>
   );
