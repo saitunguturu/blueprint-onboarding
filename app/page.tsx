@@ -13,12 +13,14 @@ export default function Home() {
           <span className="color-blue">blueprint</span> blog
         </h1>
 
-        <ProfileIcon size={24} />
         <div className={styles.headerRow}>
-          <p className={styles.username}>rbeggs</p>
-          <p className={styles.date}>September 19</p>
+          <div className={styles.leftGroup}>
+            <ProfileIcon size={24} className={styles.avatar} />
+            <p className={styles.username}>rbeggs</p>
+          </div>
+          <div className={styles.date}>September 19</div>
         </div>
-        <p>
+        <p className="styles.postText">
           In response to the growing homelessness crisis in San Francisco, a
           local nonprofit organization, Code Tenderloin, has launched a
           comprehensive initiative aimed at providing long-term solutions for
@@ -35,34 +37,36 @@ export default function Home() {
         />
 
         <div className={styles.iconRow}>
-          <HeartIcon size={24} />
-          <p className={styles.username}>256 Likes</p>
+          <div className={styles.leftGroup}>
+            <HeartIcon size={24} />
+            <p className={styles.username}>256 Likes</p>
+          </div>
           <ShareIcon size={24} />
         </div>
 
         <div className={styles.comment}>
-          <ProfileIcon size={24} className={styles.profileIcon} />
-          <div className={styles.commentContent}>
-            <div className={styles.commentHeader}>
+          <div className={styles.commentHeader}>
+            <div className={styles.leftGroup}>
+              <ProfileIcon size={24} className={styles.profileIcon} />
               <p className={styles.username}>daviddd</p>
-              <p className={styles.date}>September 20</p>
             </div>
-            <p>
-              This organization is doing amazing work tackling the complex root
-              causes of the issue.
-            </p>
+            <p className={styles.date}>September 20</p>
           </div>
+          <p>
+            This organization is doing amazing work tackling the complex root
+            causes of the issue.
+          </p>
         </div>
 
         <div className={styles.comment}>
-          <ProfileIcon size={24} className={styles.profileIcon} />
-          <div className={styles.commentContent}>
-            <div className={styles.commentHeader}>
+          <div className={styles.commentHeader}>
+            <div className={styles.leftGroup}>
+              <ProfileIcon size={24} className={styles.profileIcon} />
               <p className={styles.username}>vppraggie</p>
-              <p className={styles.date}>September 21</p>
             </div>
-            <p>Thanks for sharing!</p>
+            <p className={styles.date}>September 21</p>
           </div>
+          <p>Thanks for sharing!</p>
         </div>
       </div>
     </main>
