@@ -8,10 +8,19 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.content}>
-        <ProfileIcon size={24} />
-        <p>rbeggs</p>
-        <p>September 19</p>
-        <p>
+        <h1 className={styles.header}>
+          <img src="assets/images/bp-logo.png" />
+          <span className="color-blue">blueprint</span> blog
+        </h1>
+
+        <div className={styles.headerRow}>
+          <div className={styles.leftGroup}>
+            <ProfileIcon size={24} className={styles.avatar} />
+            <p className={styles.username}>rbeggs</p>
+          </div>
+          <div className={styles.date}>September 19</div>
+        </div>
+        <p className="styles.postText">
           In response to the growing homelessness crisis in San Francisco, a
           local nonprofit organization, Code Tenderloin, has launched a
           comprehensive initiative aimed at providing long-term solutions for
@@ -22,27 +31,43 @@ export default function Home() {
           https://www.codetenderloin.org/
         </p>
 
-        <p>
-          Image Link:
-          https://cdn.britannica.com/51/178051-050-3B786A55/San-Francisco.jpg
-        </p>
+        <img
+          src="https://cdn.britannica.com/51/178051-050-3B786A55/San-Francisco.jpg"
+          className={styles.image}
+        />
 
-        <HeartIcon size={24} />
-        <p>256 Likes</p>
-        <ShareIcon size={24} />
+        <div className={styles.iconRow}>
+          <div className={styles.leftGroup}>
+            <HeartIcon size={24} />
+            <p className={styles.username}>256 Likes</p>
+          </div>
+          <ShareIcon size={24} />
+        </div>
 
-        <ProfileIcon size={24} />
-        <p>daviddd</p>
-        <p>September 20</p>
-        <p>
-          This organization is doing amazing work tackling the complex root
-          causes of the issue.
-        </p>
+        <div className={styles.comment}>
+          <div className={styles.commentHeader}>
+            <div className={styles.leftGroup}>
+              <ProfileIcon size={24} className={styles.profileIcon} />
+              <p className={styles.username}>daviddd</p>
+            </div>
+            <p className={styles.date}>September 20</p>
+          </div>
+          <p>
+            This organization is doing amazing work tackling the complex root
+            causes of the issue.
+          </p>
+        </div>
 
-        <ProfileIcon size={24} />
-        <p>vppraggie</p>
-        <p>September 21</p>
-        <p>Thanks for sharing!</p>
+        <div className={styles.comment}>
+          <div className={styles.commentHeader}>
+            <div className={styles.leftGroup}>
+              <ProfileIcon size={24} className={styles.profileIcon} />
+              <p className={styles.username}>vppraggie</p>
+            </div>
+            <p className={styles.date}>September 21</p>
+          </div>
+          <p>Thanks for sharing!</p>
+        </div>
       </div>
     </main>
   );

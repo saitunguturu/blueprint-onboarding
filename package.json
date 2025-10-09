@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint:check": "npx eslint .",
+    "lint": "npx eslint .",
     "lint:fix": "npx eslint . --fix",
     "tsc": "pnpm exec tsc --noEmit",
     "prettier:check": "pnpm exec prettier --check .",
